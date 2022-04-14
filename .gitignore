@@ -2,9 +2,9 @@
 .DS_Store
 .cph
 temp
-.DS_Store
 *.prob
 input.txt
 output.txt
-output.txt
-input.txt
+.vscode
+.idea
+out
