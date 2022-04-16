@@ -5,14 +5,16 @@ using namespace std;
 void bubbleSort(int arr[], int n)
 {
     int i, j,temp;
-    for (i = 0; i < n-1; i++)    
-     
-    // Last i elements are already in place
-    for (j = 0; j < n-i-1; j++)
-        if (arr[j] > arr[j+1])
+    for (i = 0; i < n-1; i++){    
+         // Last i elements are already in place
+    for (j = 0; j < n-i-1; j++){
+        if (arr[j] > arr[j+1]){
             temp=arr[j];
             arr[j]=arr[j+1];
             arr[j+1]=temp;
+        }
+        }
+    }
 }
 
 
@@ -26,14 +28,11 @@ void solve()
         cin>>a1[k];
     }
     bubbleSort(a1,2*n);
-    
-    for(int i = 0; i < n; ++i){ 
-        
-        ans+=abs(a1[i]-a1[i+1])+abs(a1[i+5]-a1[i+6]);
+    for(int i = 0; i < n-1; i++){
+        ans=ans +(abs(a1[i]-a1[i+1])+abs(a1[i+5]-a1[i+6]));
         cout<<ans;
     }
     cout<<ans;
-    
 }
 int main() {
     ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
