@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <bits/s>
 using namespace std;
 #define ll long long
 #define mod 1000000007
