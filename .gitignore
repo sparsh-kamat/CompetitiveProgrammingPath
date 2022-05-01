@@ -4,6 +4,7 @@
 !*.*
 # Unignore all dirs
 !*/
+*.o
 .DS_Store
 .cph
 temp
