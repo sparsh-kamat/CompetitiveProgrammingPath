@@ -16,3 +16,4 @@ output.txt
 out
 .iml
 *.dSYM
+*.bin
